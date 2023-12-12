@@ -39,7 +39,7 @@ body{
 
 .card{
 
-    height: 65vh;
+    /* height: 65vh; */
     min-width: 300px;
     max-width: 300px;
     min-height: 500px;
