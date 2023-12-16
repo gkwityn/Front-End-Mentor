@@ -16,13 +16,9 @@ font-family: 'Montserrat', sans-serif;
  */
 
 
-
-
 *{
     margin: 0;
     padding: 0;
-    
-    /* background-color: var(--dark-cyan); */
 }
 
 
@@ -33,6 +29,7 @@ font-family: 'Montserrat', sans-serif;
     align-items: center;
     height: 100vh;
  }
+
  h1{
     font-family: 'Fraunces', serif
  }
@@ -46,17 +43,13 @@ font-family: 'Montserrat', sans-serif;
 
 .card{
     display: flex;
-    
     height: 400px;
     width: 550px;
-
 }
 
 
 .product-img-container{
     display: flex;
-    /* flex:1; */
-
 }
 
 .info-section{
@@ -65,45 +58,35 @@ font-family: 'Montserrat', sans-serif;
     justify-content: space-evenly;
     align-items:start;
     padding:5%  ;
-    /* flex:1;     */
-
     border-radius: 0px 10px 10px 0px;
     background-color: var(--white);
-    
-    /* border: 1px red solid; */
 }
+
 .price-container{
     display: flex;
     justify-content: flex-end;
     width: 100%;
-    
     margin-top: 16px;
     font-size: 12px;
-
-        /* border: 1px red solid; */
-
-
 }
+
 .product-cost-large{
     display: flex;
     flex:1;
     justify-content: start;
     font-family: 'Fraunces', serif;
     font-size: 26px;
-    
     font-weight: 700;
     color: var(--dark-cyan);
 }
+
 .product-cost-strike{
     display: flex;
     flex:1;
     justify-self: start;
     align-self: center;
     background-color: var(--white);
-    /* border: 1px red solid; */
 }
-
-
 
 img{
     border-radius: 10px 0px 0px 10px;
@@ -129,7 +112,7 @@ img{
 }
 
 .product-img-desktop{
-    display: block;
+    display: flex;
 }
 button{
     border:none;
@@ -141,25 +124,20 @@ button p{
 }
 
 
-
-
-
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 550px) {
     
 
     main{
         display: flex;
-        /* align-items: center; */
-        width: 100%; 
-        height: 100%; 
+        align-items: start;
+        height: 100vh;
+        
     }
 
     .card{
         flex-direction: column;
-        
-        
-        height: 90vh;
-        width: 90%;
+        padding:5% 5% 5% 5%;
+        flex:1;
     }
     .product-img-container{
         flex:1;
@@ -168,7 +146,7 @@ button p{
         flex:5 ;
         border-radius: 0px 0px 10px 10px;
         height: 100%;
-        width: 100%;
+        width: 90%;
     }
 
     /* Control img load mobile vs. destop */
@@ -178,7 +156,8 @@ button p{
     .product-img-desktop{
         display: none;
     }
-    img{
+    .product-img-mobile{
+        width: 100%;
         border-radius: 10px 10px 0px 0px;
     }
 }
