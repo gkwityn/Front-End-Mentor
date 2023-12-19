@@ -9,20 +9,15 @@
 *{
     margin: 0;
     padding: 0;
-    
 }
 
 
 main{
     width: 100%;
     height: 100vh;
-
-    /* font-family: 'Work Sans', sans-serif; */
-    /* background-color: green; */
-    /* margin: auto; */
-
     
 }
+
 
 .svg-wrapper{
     width: 100%;
@@ -39,7 +34,7 @@ main{
     justify-content: space-between;
     
     width: 30%;
-    height: 60%;
+    height: 50%;
     top: 0;
     left: 0;
     right: 0;
@@ -53,14 +48,16 @@ main{
     background-color: var(--white);    
     
 }
+
+
 .faq-container-top{
     font-size: 28px;
     font-weight: 700;
     display: flex;
     flex-direction: row;
     gap: 5%;
-    /* border: 1px red solid; */
 }
+
 
 .accordion{
     display: flex;
@@ -71,8 +68,19 @@ main{
     border: none;
 }
 
+.active, .accordion:hover {
+    color: rgb(148, 19, 253);
+    font-weight: 700;
+  }
+
+.panel {
+    background-color: white;
+    display: none;
+    overflow: hidden;
+  }
+
 
 .footer{
     height: 100%;
-    background-color: var(--light-pink  );    
+    background-color: var(--light-pink);    
 }
