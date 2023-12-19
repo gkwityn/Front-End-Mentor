@@ -33,13 +33,14 @@ main{
     flex-direction: column;
     justify-content: space-between;
     
-    width: 30%;
-    height: 50%;
+    width: 40%;
+    height: 60%;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     margin: auto;
+    
     
     border-radius: 20px;
     padding: 3%;
@@ -59,9 +60,11 @@ main{
 }
 
 
+
+
 .accordion{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
     align-items: center;
     height: 10%;
     background-color: white;
