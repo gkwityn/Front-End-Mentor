@@ -14,7 +14,9 @@ header{
     display: flex;
     flex-direction: column;
     flex:1;
+    justify-content: center;
     align-items: center;
+    /* align-content: center; */
 
     font-family: 'Yeseva One', serif;
     font-size: 24px;
@@ -22,7 +24,7 @@ header{
     background-color: #B6BBC4;
 }
 header h2{
-    font-size: 16px;
+    font-size: 18px;
 }
 
 main{
@@ -43,9 +45,9 @@ main{
     color: #161A30;
     background-color: #F0ECE5 ;
     width: 300px;
-    height: 70%;
+    height: 35%;
     border-radius: 10px;
-    padding: 16px;
+    padding: 8px;
 }
 
 .img-container{
@@ -64,6 +66,7 @@ img{
 
 .card-info{
     display: flex;
+    height: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -71,8 +74,10 @@ img{
     padding:16px;
 }
 
-h2{
+.card-info h2{
+    margin-bottom: 16px;
     text-align: center;
+
 }
 
 
