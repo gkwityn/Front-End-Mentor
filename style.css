@@ -32,10 +32,14 @@ main{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 100px;
     flex:6;
+    padding: 2.5% 10%;
     color: #F0ECE5 ;
     background-color: #161A30 ;
+
+    /* border: red 1px solid; */
 }
 
 .card{
@@ -45,9 +49,11 @@ main{
     color: #161A30;
     background-color: #F0ECE5 ;
     width: 300px;
-    height: 35%;
+    height: 40%;
+    
     border-radius: 10px;
     padding: 8px;
+    overflow: hidden;
 }
 
 .img-container{
@@ -56,6 +62,7 @@ main{
     flex: 1;
     max-height:50%;    
     min-height: 50%;
+    
 }
 
 img{
