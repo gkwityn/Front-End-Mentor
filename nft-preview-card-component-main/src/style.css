@@ -58,8 +58,8 @@ main{
 
     background-color: var(--very-dark-blue-card-bg);
     border-radius: 20px;
-    box-shadow: 0 0 100px linear-gradient(blue, green);
-                
+    box-shadow: 0 0 20px 20px hsl(215, 55%, 10%),
+                0 0 40px 40px hsl(216, 52%, 11%);
                 
 
 }
