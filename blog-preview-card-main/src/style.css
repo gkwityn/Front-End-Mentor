@@ -25,3 +25,53 @@
 body{
     background-color: var(--clr-yellow);
 }
+
+/* 
+main{
+    width: 100;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+} */
+    
+
+.card{
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    flex-direction: column;
+    
+    justify-content: space-between;
+    background-color: var(--clr-white);
+    width: 80%;
+    /* max-width: 500px; */
+    padding: 1.5em;
+    border: 1px solid var(--clr-black);
+    border-radius: 1em;
+    height:60%;
+    box-shadow: 0.5em 0.5em black;
+    
+}
+
+.article-img{
+    border-radius: 0.75em;
+}
+
+.card-label{
+    width: 5em;
+    padding: 0.3em;
+    text-align: center;
+    background-color: var(--clr-yellow);
+    border-radius: 0.5em;
+    font-weight: 600;
+
+}
+
+
+@media screen and (min-width: 400px) {
+    main{
+        width: 90%;
+    }
+}
