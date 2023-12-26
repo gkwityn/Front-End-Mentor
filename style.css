@@ -48,25 +48,32 @@ main{
     background-color: #F0ECE5 ;
     width: 300px;
     height: 40%;
+    max-height: 460px;
     
     border-radius: 10px;
-    padding: 8px;
+    padding: 1em;
     overflow: hidden;
 }
 
 .img-container{
     display: flex; 
+    justify-content: center;
+    align-items: center;
     flex-grow: 1;
-    flex: 1;
+    /* flex: 1; */
     max-height:50%;    
-    min-height: 50%;
+    /* min-height: 50%; */
+    overflow: hidden;
+    border-radius: 10px;
     
 }
 
 img{
-    height: auto;
-    width: 100%;
+    /* height: auto; */
+    height: 100%;
+    
     border-radius: 10px;
+    
 }
 
 .card-info{
@@ -77,6 +84,7 @@ img{
     align-items: center;
     border-radius: 10px;
     padding:16px;
+    
 }
 
 .card-info h2{
