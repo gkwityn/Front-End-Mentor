@@ -1,8 +1,149 @@
-/* css reset */
+
+/* 
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Pale blue: hsl(225, 100%, 94%)
+- Bright blue: hsl(245, 75%, 52%)
+
+### Neutral
+
+- Very pale blue: hsl(225, 100%, 98%)
+- Desaturated blue: hsl(224, 23%, 55%)
+- Dark blue: hsl(223, 47%, 23%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 16px
+
+### Font
+
+- Family: [Red Hat Display](https://fonts.google.com/specimen/Red+Hat+Display)
+- Weights: 500, 700, 900
+
+
+ */
+
+
+ /* css reset */
 *{
     margin: 0;
     padding: 0;
+    
+    font-size: 16px;
 }
+
+:root{
+    /* ### Primary */
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+
+    /* ### Neutral */
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+p{
+    font-size: 0.80rem;
+    color: var(--desaturated-blue);
+    font-weight: 500;
+}
+h1{
+    color: var(--dark-blue);
+    font-size: 1.25rem;
+    font-weight: 900;
+}
+
+
+body{
+    height: 100vh;
+    background-color: var(--pale-blue);
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+main{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 90%;
+    height:80%;
+    max-width: 300px;
+
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    
+    background-color: white;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.hero-img{
+    width: 100%;
+}
+
+.card-info{
+    height: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.plan-container{
+    background-color: var(--very-pale-blue);
+    border-radius: 1rem;
+    font-size: 0.8rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h2{
+    font-size: 0.8rem;
+    font-weight: 900;
+}
+.plan-link{
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+
+
+button{
+    background-color: var(--bright-blue);
+    color: var(--very-pale-blue);
+    font-size: 0.9rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.cancel-order{
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--desaturated-blue);
+}
+
+
 
 
 
