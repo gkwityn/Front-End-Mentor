@@ -48,6 +48,7 @@
     --very-pale-blue: hsl(225, 100%, 98%);
     --desaturated-blue: hsl(224, 23%, 55%);
     --dark-blue: hsl(223, 47%, 23%);
+    
 }
 
 p{
@@ -66,6 +67,7 @@ body{
     height: 100vh;
     background-color: var(--pale-blue);
     font-family: 'Red Hat Display', sans-serif;
+    line-height: 1.7;
 }
 
 main{
@@ -78,8 +80,7 @@ main{
 .card{
     width: 90%;
     height:80%;
-    max-width: 300px;
-
+    
     display: flex;
     flex-direction:column;
     justify-content: space-between;
@@ -142,6 +143,15 @@ button{
     text-decoration: none;
     color: var(--desaturated-blue);
 }
+
+
+@media screen and (min-width: 376px){
+    .card{
+        max-width: 300px;
+        max-height: 500px;
+    }
+}
+
 
 
 
