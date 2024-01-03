@@ -21,14 +21,35 @@ function validateEmail(inputText){
         card.style = 
             `width: 50%;
             height: 50%;
+            max-width:275px;
+            max-height:275px;
             display: flex;
-            flex-direction: row;
-            padding: 1rem;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: start;
+            padding: 1.75rem;
             `;
-        
-        checkImg.src = "../images/newsletter-sign-up-with-success-message-main/assets/images/icon-success.svg";
-        
-        
+        checkImg.style = 
+            `width: 2.5rem;`;
+        thanksH1.style = 
+            `font-size: 2rem;`;
+        infoPara.style =
+            `font-size: 0.75rem;
+             font-weight: 400`;
+        dismissButton.style =
+            `height: 2rem;
+            font-size: 0.75rem;
+            font-weight: 400`;
+
+        checkImg.src = "../assets/images/icon-success.svg";
+        thanksH1.innerText = "Thanks for subscribing!";
+        infoPara.innerText = `A confirmation email has been sent to ${inputText}. Please open it and click the button inside to confir your subscription.`;
+        dismissButton.innerText = "Dismiss message";
+
+        card.appendChild(checkImg);
+        card.appendChild(thanksH1);
+        card.appendChild(infoPara);
+        card.appendChild(dismissButton);
         // button:hover{
         //     background: linear-gradient(45deg, hsl(344, 96%, 65%), hsl(23, 96%, 65%));
         //     cursor: pointer;
