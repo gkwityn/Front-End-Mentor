@@ -12,49 +12,27 @@ function validateEmail(inputText){
         while(card.firstChild){
             card.removeChild(card.lastChild);
         }
-
+        
+        //Re-create card element for successful signup notification.
+        const thanksWrapper = document.createElement("div");
         const checkImg = document.createElement('img');
         const thanksH1 = document.createElement('h1');
         const infoPara = document.createElement('p');
         const dismissButton = document.createElement('button');
-
-        card.style = 
-            `width: 50%;
-            height: 50%;
-            max-width:275px;
-            max-height:275px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: start;
-            padding: 1.75rem;
-            `;
-        checkImg.style = 
-            `width: 2.5rem;`;
-        thanksH1.style = 
-            `font-size: 2rem;`;
-        infoPara.style =
-            `font-size: 0.75rem;
-             font-weight: 400`;
-        dismissButton.style =
-            `height: 2rem;
-            font-size: 0.75rem;
-            font-weight: 400`;
+    
+        card.className = "card-success";
+        thanksWrapper.className ="thanks-wrapper";
 
         checkImg.src = "../assets/images/icon-success.svg";
         thanksH1.innerText = "Thanks for subscribing!";
         infoPara.innerText = `A confirmation email has been sent to ${inputText}. Please open it and click the button inside to confir your subscription.`;
         dismissButton.innerText = "Dismiss message";
 
-        card.appendChild(checkImg);
-        card.appendChild(thanksH1);
-        card.appendChild(infoPara);
-        card.appendChild(dismissButton);
-        // button:hover{
-        //     background: linear-gradient(45deg, hsl(344, 96%, 65%), hsl(23, 96%, 65%));
-        //     cursor: pointer;
-        // }
-           
+        thanksWrapper.appendChild(checkImg);
+        thanksWrapper.appendChild(thanksH1);
+        thanksWrapper.appendChild(infoPara);
+        card.appendChild(thanksWrapper);
+        card.appendChild(dismissButton);     
     }
     else{
         validEmail.style = `display: block;`;
