@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+
+/* @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap'); */
+
+
 :root{
     /*Primary */
     --clr-very-dark-magenta: hsl(300, 43%, 22%);
@@ -16,19 +20,110 @@
     --clr-White: hsl(0, 0%, 100%);
 
     --fs-400: 15px;
-    /* --fw-400: var(font-weight: 400);
-    --fw-500: var(font-weight: 500);
-    --fw-700: var(font-weight: 700); */
+    --fw-400: 400;
+    --fw-500: 500;
+    --fw-700: 700;
 }
 
 body{
-    font-family: ;
+    font-family: 'League Spartan', sans-serif;
     font-size: var(--fs-400);
-    color: ;
+    font-weight: var(--fs-400);
+    width: 100vw;
+    
+    
+    
+    /* background-color: coral; */
+    /* border: 1px red solid; */
 }
 
 img,
 svg{
-    display: block;
+    display: inline;
     max-width: 100%;
 }
+
+.main-wrapper{
+    width: 95%;
+    margin: 0 auto;
+
+    /* background-color: var(--clr-White); */
+    /* border: 1px red solid; */
+}
+
+header{
+    
+    padding: 2em 0em 2em 0em;
+    text-align: center;
+
+    background-color: var(--clr-White); 
+    /* border: 1px red solid; */
+}
+
+h1{
+    color: var(--clr-very-dark-magenta);
+    font-size: 2.5rem;
+    font-weight: var(--fw-700);
+    padding: 1em 1em;
+}
+
+.header-info{
+    color: var(--clr-dark-grayish-magenta);
+    padding: 0 2em;
+    font-weight: var(--fw-500);
+}
+
+.rating-section,
+.testimonial-section{
+    padding: 2em;
+
+    /* background-color: var(--clr-White);  */
+    background-color: var(--clr-White);
+    /* border: 1px red solid; */
+}
+
+.rating-card,
+.testimonial-card{
+    
+    border-radius: 0.5em;
+    margin: 1em 0;
+    text-align: center;
+    
+}
+
+.rating-card{
+    padding: 1em;
+    font-weight: var(--fw-700);
+    background-color: var(--clr-light-grayish-magenta);
+    color: var(--clr-very-dark-magenta);
+}
+
+.rating-stars{
+    padding: 0.75em 0;
+}
+
+.testimonial-card{
+    padding: 2em;
+    background-color: var(--clr-very-dark-magenta);
+    color: var(--clr-light-grayish-magenta);
+    font-weight: var(--fw-500);
+}
+
+.card-header{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1em;
+    padding:1em;
+}
+
+.img-profile{
+    border-radius: 50%;
+    width: 3em;
+    
+}
+
+.verified-buyer{
+    color: var(--clr-soft-pink);
+}
+
