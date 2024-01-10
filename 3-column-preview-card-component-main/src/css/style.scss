@@ -1,0 +1,45 @@
+@import "reset";
+@import "colors";
+
+// img,
+// svg{
+    
+//     max-width: 100%;
+// }
+
+@mixin card-theme($bg-clr: DarkGrey){
+    display: flex;
+    flex-direction: column;
+    border-radius: 1em;
+    background: $bg-clr;
+    border: 1px $bg-clr solid;
+}
+
+body{
+    display:flex;
+    flex-direction: column;
+    gap: 1em;
+    
+    padding: 4em 0;
+}
+
+main{
+    margin: 0 auto;
+    width: 90%;
+    border: 1px solid steelblue;
+
+
+    .card{
+     
+        .sedans{
+            @include card-theme($bright-orange);
+            
+        }
+        .suvs{
+            @include card-theme($dark-cyan);
+        }
+        .luxury{
+            @include card-theme($very-dark-cyan);
+        }
+    }
+}
