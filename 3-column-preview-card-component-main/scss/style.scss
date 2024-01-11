@@ -1,50 +1,57 @@
-body{
-    background-color: lavender
+$ff-header: 'Big Shoulders Display', sans-serif;
+$ff-paragraph: 'Lexend Deca', sans-serif;
+
+
+// ## Colors
+// ### Primary
+
+$bright-orange: hsl(31, 77%, 52%);
+$dark-cyan: hsl(184, 100%, 22%);
+$very-dark-cyan: hsl(179, 100%, 13%);
+
+@mixin card-theme($bg-clr){
+    background-color: $bg-clr;
 }
 
 
-// @import "_reset";
-// @import "_colors";
+body{
+    height: 100vh;
+    padding: 15% 0;
+}
 
-// // img,
-// // svg{
+main{
     
-// //     max-width: 100%;
-// // }
+    margin: 0 auto;
+    margin-bottom: 15%;
+    width: 90%;
+    height: 100%;
 
-// @mixin card-theme($bg-clr: Pink){
-//     display: flex;
-//     flex-direction: column;
-//     border-radius: 1em;
-//     background: $bg-clr;
-//     border: 1px $bg-clr solid;
-// }
-
-// body{
-//     display:flex;
-//     flex-direction: column;
-//     gap: 2em;
+    border: 1px red solid;
     
-//     padding: 4em 0;
-// }
+    
+}
 
-// main{
-//     margin: 0 auto;
-//     width: 90%;
-//     border: 1px solid steelblue;
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    // gap: 5%;
+    border-radius: 1em;
+    padding: 10%;
+    // border: 1px red solid;
 
+    .sedans{
+        @include card-theme($bright-orange);
+    }
 
-//     .card{
-     
-//         .sedans{
-//             @include card-theme($bright-orange);
-            
-//         }
-//         .suvs{
-//             @include card-theme($dark-cyan);
-//         }
-//         .luxury{
-//             @include card-theme($very-dark-cyan);
-//         }
-//     }
-// }
+    .suvs{
+        
+        @include card-theme($dark-cyan);
+    }
+
+    .luxury{
+        @include card-theme($very-dark-cyan);
+    }
+
+}

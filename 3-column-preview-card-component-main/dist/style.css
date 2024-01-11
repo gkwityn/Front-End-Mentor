@@ -1,3 +1,30 @@
 body {
-  background-color: pink;
+  height: 100vh;
+  padding: 15% 0;
+}
+
+main {
+  margin: 0 auto;
+  margin-bottom: 15%;
+  width: 90%;
+  height: 100%;
+  border: 1px red solid;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  border-radius: 1em;
+  padding: 10%;
+}
+.card .sedans {
+  background-color: hsl(31, 77%, 52%);
+}
+.card .suvs {
+  background-color: hsl(184, 100%, 22%);
+}
+.card .luxury {
+  background-color: hsl(179, 100%, 13%);
 }/*# sourceMappingURL=style.css.map */
