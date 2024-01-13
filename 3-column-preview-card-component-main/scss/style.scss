@@ -92,9 +92,37 @@ body{
 }
 
 
-@media screen and (min-width: 800px){
-    body{
-        flex-direction: row;
+@media screen and (min-width: 1000px){
+    main{
+        height: 45%;
+        display: flex;
+
+    }
+
+    .card{
+        justify-content: space-around;
+        padding: 5% 5%;
+        
+        .header-img{
+            margin-bottom: -2em;
+        }
+
+        .card_header{
+            margin-bottom: -2em;
+        }
+
+        &.sedans{
+            border-radius: 1em 0 0 1em;
+        }
+    
+        &.suvs{
+           border: none;
+        }
+    
+        &.luxury{
+            border-radius: 0 1em 1em 0;
+
+        }
     }
 }
 
